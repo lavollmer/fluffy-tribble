@@ -7,6 +7,7 @@ import TTS from "./components/texttospeech"
 function App() {
   return (
     <div>
+      <h1>Hellow</h1>
       {/* <Practice /> */}
       <TTS />
     </div>
