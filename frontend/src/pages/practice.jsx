@@ -1,33 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
+const Practice = () => {
+  const [name, setName] = useState('');
 
-const practice = () => {
-    const [name, setName] = useState('');
+  const handleSubmit = (e) => {
+      e.preventDefault();
+      alert(`The medication you entered was ${name}`);
+  }
 
-    // const handleSubmit= (e) => {
-    //     e.preventDefault();
-    //     alert(`The medication you entered was ${name}`)
-    // }
-
-    return (
-        <>
-            <div>
-                <form>
-                    <div>
-                        <label>Enter medication name:
-                            <input
-                                type='text'
-                                id='name'
-                                name='name'
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}></input>
-                        </label>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </>
-    )
+  return (
+      <>
+          <div>
+              <form onSubmit={handleSubmit}>
+                  <div>
+                      <label>Enter medication name:
+                          <input
+                              type='text'
+                              id='name'
+                              name='name'
+                              value={name}
+                              onChange={(e) => setName(e.target.value)} />
+                      </label>
+                  </div>
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+      </>
+  );
 }
 
-export default practice
+export default Practice;

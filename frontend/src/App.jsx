@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Practice from './pages/practice';
-import React from 'react';
+
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <h1>Medication</h1>
       <Practice />
     </div>
   );
