@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const Practice = () => {
   const [name, setName] = useState('');

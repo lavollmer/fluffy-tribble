@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import Practice from './pages/practice';
+// import Practice from './pages/practice';
+import TTS from "./components/texttospeech"
 
 
 function App() {
   return (
     <div>
-      <h1>Medication</h1>
-      <Practice />
+      {/* <Practice /> */}
+      <TTS />
     </div>
   );
 }
