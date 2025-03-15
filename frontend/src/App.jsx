@@ -9,7 +9,7 @@ function App() {
     <div>
       <h1>Hellow</h1>
       {/* <Practice /> */}
-      <TTS />
+      {/* <TTS /> */}
     </div>
   );
 }
