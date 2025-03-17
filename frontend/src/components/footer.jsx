@@ -2,8 +2,10 @@ import React from 'react'
 
 const footer = () => {
   return (
-    <div className='m-10 flex flex-row justify-between items-center font-roboto'>
+    <div className='flex flex-row justify-between items-center font-roboto bg-blue-500'>
+      <div>
       <h1 className='text-2xl font-bold'>MEDPRONUNCIATION</h1>
+      </div>
     </div>
   )
 }
