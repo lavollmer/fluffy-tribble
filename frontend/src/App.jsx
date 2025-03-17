@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 // import TTS from "./components/texttospeech.jsx"
-import Header from './components/header.jsx';
+import Home from './pages/home.jsx';
 
 
 function App() {
   return (
     <div>
-      <Header />
+      <Home />
       {/* <TTS /> */}
     </div>
   );
