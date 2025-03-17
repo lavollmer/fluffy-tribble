@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 function TextToSpeech() {
+
     // setting useState for text and audioURL
     const [text, setText] = useState('');
     const [audioURL, setAudioURL] = useState('');
@@ -13,8 +14,15 @@ function TextToSpeech() {
             },
             body: JSON.stringify({ text })
         });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
         const data = await response.json();
+        console.log("data", data);
         setAudioURL(`data:audio/mp3;base64,${data.audio}`);
+
     };
 
     return (

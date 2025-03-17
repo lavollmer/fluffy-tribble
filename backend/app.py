@@ -3,11 +3,14 @@ from flask_cors import CORS
 from google.cloud import texttospeech
 import base64
 import os
+import logging
 
 app = Flask(__name__)
 
 # enable CORS for all routes
-CORS(app, origins="http://localhost:5181")
+CORS(app)
+
+logging.basicConfig(level=logging.DEBUG)
 
 @app.route('/')
 def main_homepage():
@@ -18,13 +21,22 @@ def main_homepage():
 @app.route("/synthesize", methods=["POST"])
 def synthesize_speech():
     try:
+        print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
+
         if not os.getenv('GOOGLE_APPLICATION_CREDENTIALS'):
             return jsonify({"error": "Google credentials not found!"}), 500
         
+
+        # logging.debug(f"Using Google credentials: {google_credentials}")
+
+    
         client = texttospeech.TextToSpeechClient()
         text = request.json["text"]
         if not text:
             return jsonify({"error": "No text provided"}), 400
+
+
+        logging.debug(f"Received text for synthesis: {text}")
 
         input_text = texttospeech.SynthesisInput(text=text)
         voice = texttospeech.VoiceSelectionParams(
@@ -40,6 +52,7 @@ def synthesize_speech():
 
         audio_data = base64.b64encode(response.audio_content).decode("utf-8")
         return jsonify({"audio": audio_data})
+    
     except Exception as e:
         print(f"Error: {e}")
         return jsonify({"error": str(e)}), 500
