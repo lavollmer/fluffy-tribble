@@ -6,7 +6,7 @@ export default defineConfig({
   publicDir: 'public', // Set the public directory to 'public'
   plugins: [react()], // If using React
   server: {
-    port: 3003, // Frontend development server port
+    port: 3009, // Frontend development server port
     proxy: {
       '/api': {
         target: 'http://localhost:5000', // Python backend server address
