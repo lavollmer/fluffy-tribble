@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # enable CORS for all routes
-CORS(app, origins="http://localhost:3002")
+CORS(app, origins="http://localhost:5181")
 
 @app.route('/')
 def main_homepage():
