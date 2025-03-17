@@ -2,7 +2,11 @@ import React from 'react'
 
 const header = () => {
   return (
-    <div>header</div>
+    <div>
+      <div>
+        <h1 className='font-roboto text-md'>MEDPRONUNCIATION</h1>
+      </div>
+    </div>
   )
 }
 

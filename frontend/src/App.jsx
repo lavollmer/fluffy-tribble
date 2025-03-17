@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import TTS from "./components/texttospeech.jsx"
+// import TTS from "./components/texttospeech.jsx"
+import Header from './components/header.jsx';
 
 
 function App() {
   return (
-    <div className='bg-blue-500'>
-      <h1>Hellow</h1>
-      <TTS />
+    <div>
+      <Header />
+      {/* <TTS /> */}
     </div>
   );
 }
