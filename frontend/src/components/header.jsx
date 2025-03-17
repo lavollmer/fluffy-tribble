@@ -4,7 +4,7 @@ const header = () => {
   return (
     <div>
       <div>
-        <h1 className='font-roboto text-md'>MEDPRONUNCIATION</h1>
+        <h1 className='font-roboto text-lg bg-blue-500'>MEDPRONUNCIATION</h1>
       </div>
     </div>
   )
