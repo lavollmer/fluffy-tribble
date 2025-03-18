@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import { FaRegStar } from "react-icons/fa";
 
 const starrating = ({totalStars = 5}) => {
+    // tracks the current rating - intial 0
     const [star, setStar] = useState(0);
+    // tracks the current hover - intial 0
     const [hover, setHover] = useState(0);
-    
+
     return (
         <>
             <div className='flex flex-col items-center justify-center'>
