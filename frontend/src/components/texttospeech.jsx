@@ -32,11 +32,13 @@ function TextToSpeech() {
                 type='text'
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-                className='bg-custom-rose'></input>
+                className="shadow-md rounded px-8 pt-6 pb-8 mb-4"></input>
             <Button onClick={handleSpeak} buttonText='Speak it' />
-            {audioURL &&
-                <audio controls src={audioURL}>
-                    Your brower doesn't support audio</audio>}
+            <div className='flex flex-col items-center justify-center p-6'>
+                {audioURL &&
+                    <audio controls src={audioURL}>
+                        Your brower doesn't support audio</audio>}
+            </div>
         </div>
     )
 }
