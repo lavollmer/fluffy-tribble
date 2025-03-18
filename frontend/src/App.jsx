@@ -7,8 +7,8 @@ import Practice from './pages/practice.jsx';
 function App() {
   return (
     <div>
-      {/* <Home /> */}
-      <Practice />
+      <Home />
+      {/* <Practice /> */}
     </div>
   );
 }

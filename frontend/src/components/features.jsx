@@ -1,14 +1,18 @@
 import React from 'react'
-import Card from '../components/card.jsx'
+import TextCard from './textcard.jsx'
 
 const features = () => {
-  return (
-    <div>
+    return (
         <div>
-            <Card />
+            <h1 className='text-2xl font-bold'>FEATURES</h1>
+            <div className='flex flex-row items-center justify-center p-6'>
+                
+                <TextCard title="Med" text="Hello" hashtag="learn" />
+                <TextCard title="Med" text="Hello" hashtag="learn" />
+                <TextCard title="Med" text="Hello" hashtag="learn" />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default features
