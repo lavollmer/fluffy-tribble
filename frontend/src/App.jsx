@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-// import TTS from "./components/texttospeech.jsx"
 import Home from './pages/home.jsx';
+import Practice from './pages/practice.jsx';
 
 
 function App() {
   return (
     <div>
-      <Home />
-      {/* <TTS /> */}
+      {/* <Home /> */}
+      <Practice />
     </div>
   );
 }

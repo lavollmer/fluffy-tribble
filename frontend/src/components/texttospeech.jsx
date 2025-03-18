@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from "./button.jsx"
 
 function TextToSpeech() {
 
@@ -26,20 +27,16 @@ function TextToSpeech() {
     };
 
     return (
-        <div>
-            <div>
-                <h1>MedPronounce</h1>
-            </div>
-            <div>
-                <input
-                    type='text'
-                    value={text}
-                    onChange={(e) => setText(e.target.value)}></input>
-                <button onClick={handleSpeak}>Say it</button>
-                {audioURL &&
-                    <audio controls src={audioURL}>
-                        Your brower doesn't support audio</audio>}
-            </div>
+        <div className='flex flex-col items-center justify-center p-6'>
+            <input
+                type='text'
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                className='bg-custom-rose'></input>
+            <Button onClick={handleSpeak} buttonText='Speak it' />
+            {audioURL &&
+                <audio controls src={audioURL}>
+                    Your brower doesn't support audio</audio>}
         </div>
     )
 }
