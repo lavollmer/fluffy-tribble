@@ -3,6 +3,7 @@ import Header from '../components/header.jsx'
 import Footer from '../components/footer.jsx'
 import mainImage from "../assets/mainimage.jpg"
 import Button from "../components/button.jsx"
+import Features from "../components/features.jsx"
 
 const home = () => {
   return (
@@ -21,6 +22,9 @@ const home = () => {
         <div className='flex flex-col p-4'>
           <img src={mainImage} alt="mainImage" />
         </div>
+      </div>
+      <div>
+        <Features />
       </div>
       <Footer />
     </div>

@@ -1,8 +1,13 @@
 import React from 'react'
+import Card from '../components/card.jsx'
 
 const features = () => {
   return (
-    <div>features</div>
+    <div>
+        <div>
+            <Card />
+        </div>
+    </div>
   )
 }
 
