@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/header.jsx'
 import Footer from '../components/footer.jsx'
 import TTS from "../components/texttospeech.jsx"
-import Button from "../components/button.jsx"
+import StarRating from "../components/starrating.jsx"
 
 
 const practice = () => {
@@ -11,6 +11,9 @@ const practice = () => {
       <Header />
       <div className='flex flex-col items-center justify-center'>
         <TTS />
+      </div>
+      <div>
+        <StarRating />
       </div>
       <Footer />
     </div>
