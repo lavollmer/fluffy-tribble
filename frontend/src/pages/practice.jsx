@@ -7,9 +7,11 @@ import Button from "../components/button.jsx"
 
 const practice = () => {
   return (
-    <div className='h-screen w-screen bg-custom-primary'>
+    <div className='h-screen w-screen bg-custom-primary font-roboto'>
       <Header />
+      <div className='flex flex-col items-center justify-center'>
         <TTS />
+      </div>
       <Footer />
     </div>
   )

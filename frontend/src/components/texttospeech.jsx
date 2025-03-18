@@ -27,12 +27,12 @@ function TextToSpeech() {
     };
 
     return (
-        <div className='flex flex-col items-center justify-center p-6'>
+        <div className='flex flex-col items-center justify-center p-6 font-roboto'>
             <input
                 type='text'
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-                className="shadow-md rounded px-8 pt-6 pb-8 mb-4"></input>
+                className="shadow-md rounded px-8 pt-6 pb-8 mb-4 font-roboto"></input>
             <Button onClick={handleSpeak} buttonText='Speak it' />
             <div className='flex flex-col items-center justify-center p-6'>
                 {audioURL &&
