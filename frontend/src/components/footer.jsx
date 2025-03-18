@@ -3,7 +3,7 @@ import React from 'react'
 const footer = () => {
   return (
     <>
-      <div className='flex flex-row items-center justify-center font-roboto'>
+      <div className='flex flex-row items-center justify-center font-roboto bg-custom-rose'>
         <div className='grid grid-cols-2 gap-4 p-4'>
           <div>
             <h1 className='text-2xl font-bold'>MEDPRONUNCIATION</h1>
