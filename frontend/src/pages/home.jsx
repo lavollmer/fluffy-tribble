@@ -17,7 +17,7 @@ const home = () => {
             <h2>AI-Led MedPronuncation works to teach healthcare professionals to pronounce medical terminology.</h2>
           </div>
           <div className="pt-6">
-            <Button buttonText='Start Today' />
+            <Button to='/practice' buttonText='Start Today' />
           </div>
         </div>
         <div className='flex flex-col p-4'>
