@@ -7,8 +7,10 @@ const header = () => {
     <div className='m-10 flex flex-row justify-between items-center font-roboto'>
       <h1 className='text-2xl font-bold'>MEDPRONUNCIATION AI</h1>
       <div className='flex flex-row justify-center items-center font-bold space-x-10 text-lg'>
-        <nav>
-        <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/practice">Practice</Link>
+        <nav className='flex flex-row justify-center items-center space-x-10'>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/practice">Practice</Link>
         </nav>
         <RxHamburgerMenu />
       </div>
