@@ -2,7 +2,7 @@ import React from 'react'
 
 const sidenavbar = () => {
   return (
-    <div>sidenavbar</div>
+    <div className='flex flex-col'>sidenavbar</div>
   )
 }
 

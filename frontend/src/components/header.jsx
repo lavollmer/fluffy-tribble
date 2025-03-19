@@ -1,8 +1,16 @@
 import React from 'react'
+import { useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from 'react-router-dom'
+import SideNavBar from "./sidenavbar"
 
 const header = () => {
+  const [showSideNavBar, setShowSideNavBar] = useState(false)
+
+  const handleSideNavClick = () => {
+    setShowSideNavBar(!showSideNavBar)
+  }
+
   return (
     <div className='m-10 flex flex-row justify-between items-center font-roboto'>
       <h1 className='text-2xl font-bold'>MEDPRONUNCIATION AI</h1>
@@ -12,8 +20,11 @@ const header = () => {
           <Link to="/about">About</Link>
           <Link to="/practice">Practice</Link>
         </nav>
-        <RxHamburgerMenu />
+        <div className='cursor-pointer'>
+          <RxHamburgerMenu onClick={handleSideNavClick} />
+        </div>
       </div>
+      {showSideNavBar == 'true' && <SideNavBar />}
     </div>
   )
 }
