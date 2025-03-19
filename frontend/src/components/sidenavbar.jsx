@@ -2,7 +2,7 @@ import React from 'react'
 
 const sidenavbar = () => {
   return (
-    <div className='flex flex-col bg-custom-bright-orange w-1/4 h-screen font-roboto'>
+    <div className='flex flex-col justify-start space-y-4 p-4 bg-custom-primary h-screen font-roboto'>
       <div>
         <h1 className='text-xl font-bold'>MEDPRONUNCIATION AI</h1>
       </div>
