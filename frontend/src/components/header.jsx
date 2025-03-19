@@ -28,7 +28,7 @@ const header = () => {
           </div>
         </div>
       </div>
-     <div className={`fixed top-0 right-0 h-full w-1/4 bg-custom-primary p-10 pl-20 z-40 transform transition-transform duration-300 ${
+     <div className={`fixed top-0 right-0 h-full w-1/3 bg-custom-primary p-10 z-40 transform transition-transform duration-300 ${
           showSideNavBar ? 'translate-x-0' : 'translate-x-full'}`}>
         <SideNavBar />
      </div>
