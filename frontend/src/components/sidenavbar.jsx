@@ -16,9 +16,9 @@ const sidenavbar = () => {
         </ul>
       </div>
       <div className='flex flex-row items-center justify-center'>
-      <Social />
+        <Social />
+      </div>
     </div>
-  </div>
   )
 }
 

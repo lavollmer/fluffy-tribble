@@ -1,4 +1,6 @@
 import React from 'react'
+import Social from "../components/social.jsx"
+import { Link } from 'react-router-dom'
 
 const footer = () => {
   return (
@@ -9,16 +11,16 @@ const footer = () => {
             <div>
               <h1 className='text-2xl font-bold'>MEDPRONUNCIATION AI</h1>
             </div>
-            <div className='flex flex-row items-center font-bold space-x-4'>
-              <h1>HOME</h1>
-              <h1>ABOUT</h1>
-              <h1>PRACTICE</h1>
-              <h1>FEEDBACK</h1>
+            <div className='flex flex-col items-center font-bold text-md space-y-4'>
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/practice">Practice</Link>
+              <Link to="/feedback">Feedback</Link>
             </div>
           </div>
         </div>
         <div className='flex flex-row items-center justify-center font-roboto p-4'>
-          <div>&copy;{new Date().getFullYear()} Laura Dev</div>
+          <Social />
         </div>
       </div>
     </>
