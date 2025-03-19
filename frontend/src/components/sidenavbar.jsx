@@ -1,4 +1,5 @@
 import React from 'react'
+import Social from "../components/social.jsx"
 
 const sidenavbar = () => {
   return (
@@ -14,7 +15,10 @@ const sidenavbar = () => {
           <li>Feedback</li>
         </ul>
       </div>
+      <div className='flex flex-row items-center justify-center'>
+      <Social />
     </div>
+  </div>
   )
 }
 
