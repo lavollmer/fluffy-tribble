@@ -4,6 +4,7 @@ import Footer from '../components/footer.jsx'
 import mainImage from "../assets/mainimage.jpg"
 import Button from "../components/button.jsx"
 import Features from "../components/features.jsx"
+import About from "../components/about.jsx"
 
 const home = () => {
   return (
@@ -25,6 +26,9 @@ const home = () => {
       </div>
       <div>
         <Features />
+      </div>
+      <div className='flex flex-row items-center justify-center'>
+        <About />
       </div>
       <Footer />
     </div>
