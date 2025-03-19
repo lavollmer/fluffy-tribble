@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Routes, Route, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Home from './pages/home.jsx';
 import Practice from './pages/practice.jsx';
@@ -10,8 +10,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/practice" component={Practice} />
+          <Route path="/" element={<Home />} />
+          <Route path="/practice" element={<Practice />} />
         </Routes>
       </BrowserRouter>
     </div>
