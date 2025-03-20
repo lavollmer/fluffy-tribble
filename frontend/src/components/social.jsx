@@ -7,8 +7,12 @@ const social = () => {
     <div className='flex flex-col items-center justify-center space-y-4'>
       <div>&copy;{new Date().getFullYear()} Laura Dev</div>
       <div className='flex flex-row items-center justify-center space-x-4'>
-        <FaGithub />
-        <BsFilePerson />
+        <a href="https://github.com/lavollmer" target="_blank" rel="noreferrer">
+          <FaGithub />
+        </a>
+        <a href="https://lauradeveloper.com/" target="_blank" rel="noreferrer">
+          <BsFilePerson />
+        </a>
       </div>
     </div>
   )
