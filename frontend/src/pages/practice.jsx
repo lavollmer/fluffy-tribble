@@ -10,7 +10,7 @@ const practice = () => {
     <div className='bg-custom-primary font-roboto'>
       <Header />
       <div className='flex flex-col items-center justify-center space-y-4'>
-        <h1 className='text-4xl font-bold text-black'>Practice</h1>
+        <h1 className='font-bold text-4xl text-black'>Practice</h1>
         <p className='text-lg text-custom-grey'>Practice your pronunciation and listening skills</p>
         <TTS />
       </div>

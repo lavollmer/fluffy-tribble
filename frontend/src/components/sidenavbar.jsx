@@ -1,11 +1,15 @@
 import React from 'react'
 import Social from "../components/social.jsx"
 import { Link } from 'react-router-dom'
+import { FaWindowClose } from "react-icons/fa";
 
 const sidenavbar = () => {
   return (
     <div className='flex flex-col justify-start space-y-10 p-4 bg-custom-primary h-screen font-roboto'>
-      <div>
+      <div className='flex flex-row justify-end'>
+      <FaWindowClose className='text-xl' />
+      </div>
+      <div className='flex flex-row justify-between items-center'>
         <h1 className='text-lg font-bold'>MEDPRONUNCIATION AI</h1>
       </div>
       <div className='flex flex-col justify-start left-0 font-bold text-md cursor-pointer space-y-4'>

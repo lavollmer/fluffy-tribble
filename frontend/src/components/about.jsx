@@ -7,7 +7,7 @@ const about = () => {
     <>
       <div className='flex flex-col items-center justify-center'>
         <div>
-          <h1 className='font-bold'>About the Developer</h1>
+          <h1 className='font-bold text-4xl'>About the Developer</h1>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 p-10'>
           <div>
