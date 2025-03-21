@@ -25,7 +25,7 @@ function faq() {
       id: 3,
     },
     {
-      intro: "How can I get help if I'm stuck on a MedPronunciation AI quiz? ",
+      intro: "How can I get help if I'm stuck on a MedPronunciation AI? ",
       pg: "If you're stuck on a MedPronunciation AI quiz, you can reach out to our support team for help. They can provide guidance on how to complete the quiz and improve your pronunciation skills.",
       id: 4,
     },
@@ -34,18 +34,18 @@ function faq() {
   //returns the JSX structure of the component
   return (
     <>
-      <div className="w-[100vw] h-[100vh] flex justify-center items-center bg-light-pink font-worksans">
-        <div className="w-[400px] md:max-w-[600px] md:w-auto z-10 rounded-lg flex flex-col p-3 text-dark-purple bg-white">
+          <div className="w-full h-full flex justify-center items-center font-roboto">
+          <div className="w-[400px] h-[600px] md:w-[600px] md:h-[800px] z-10 rounded-lg flex flex-col p-3 text-black bg-white overflow-y-auto">
           <div className="flex flex-row justify-center items-center my-4">
-            <h1 className="font-bold text-dark-purple text-3xl md:text-4xl">FAQS</h1>
+            <h1 className="font-bold text-black text-3xl md:text-4xl">FAQS</h1>
           </div>
           <div className="flex flex-col gap-4">
             {/* iterates over each item in the data array - for each item the function returns JSX */}
             {data.map((item) => (
               // key prop is required for each child in a list
               <div key={item.id}>
-                <div className="flex justify-between p-2 hover:text-purple-600 items-center">
-                  <h1 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2 cursor-pointer">
+                <div className="flex justify-between p-2 hover:text-custom-bright-orange items-center">
+                <h1 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2 cursor-pointer">
                     {item.intro}
                   </h1>
                   {/* image to serve as button to toggle active state */}
@@ -59,7 +59,7 @@ function faq() {
                 </div>
                 {/* conditional rendering block that checks if the current item is the active one */}
                 {active === item.id ? (
-                  <p className="text-gray-500 dark:text-gray-400">{item.pg}</p>
+                  <p className="w-full flex justify-center items-center text-custom-grey p-2">{item.pg}</p>
                 ) : (
                   <p></p>
                 )}
