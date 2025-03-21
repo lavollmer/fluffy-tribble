@@ -34,7 +34,7 @@ function faq() {
   //returns the JSX structure of the component
   return (
     <>
-          <div className="w-full h-full flex justify-center items-center font-roboto">
+          <div className="w-full h-full flex justify-center items-center font-roboto p-10">
           <div className="w-[400px] h-[600px] md:w-[600px] md:h-[800px] z-10 rounded-lg flex flex-col p-3 text-black bg-white overflow-y-auto">
           <div className="flex flex-row justify-center items-center my-4">
             <h1 className="font-bold text-black text-3xl md:text-4xl">FAQS</h1>

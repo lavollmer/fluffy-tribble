@@ -1,23 +1,24 @@
 import React from 'react'
+import Group from '../assets/group.jpg'
 
 const who = () => {
     return (
-        <div className='flex flex-col space-y-10 p-4 bg-custom-primary font-roboto'>
-            <div className='flex flex-row justify-center items-center'>
-                <h1 className='font-bold text-3xl '>Who is this for?</h1>
-            </div>
-            <div className='flex flex-col items-center justify-center space-y-4 text-lg'>
+        <div className='flex flex-col justify-center items-center space-y-10 p-10 font-roboto'>
+            <h1 className='font-bold text-4xl '>Who is this for?</h1>
+            <div className='grid grid-cols-2 bg-custom-primary font-roboto'>
                 <div>
-                    <p>This is for <strong>anyone</strong> who wants to improve their pronunciation of medical terms.</p>
+                    <img src={Group} alt
+                        ='group of people' className='w-96 h-96 mx-auto' />
                 </div>
-                <div className='mt-4'>
+                <div className='flex flex-col justify-center items-center space-y-10 p-10 text-lg'>
+                    <p>This is for <strong>anyone</strong> who wants to improve their pronunciation of medical terms.</p>
                     <p className='font-bold'>This includes:</p>
-                    <ul>
+                    <ul className='list-disc'>
                         <li>Healthcare students (Nursing, Medicine, Pharmacy, etc.) </li>
                         <li>Healthcare Residents</li>
                         <li>Healthcare professionals</li>
                         <li>Non-native English speakers working in healthcare settings</li>
-                        <li>Anyone interested in medical terminulogy</li>
+                        <li>Anyone interested in medical terminology</li>
                     </ul>
                 </div>
             </div>
