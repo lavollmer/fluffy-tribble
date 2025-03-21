@@ -7,7 +7,7 @@ const why = () => {
     return (
         <>
             <div className='flex flex-col items-center justify-center space-y-4 bg-custom-lighter-blue font-roboto'>
-                <h1 className='font-bold text-4xl text-black pt-10'>Why MedPronunciation AI?</h1>
+                <h1 className='font-bold text-4xl text-black pt-10'>Why use MedPronunciation AI?</h1>
                 <div className='flex flex-row items-center justify-center p-6'>
                 <div className='flex flex-col items-center justify-center p-6'>
                     <TbPercentage80 className='text-8xl' />

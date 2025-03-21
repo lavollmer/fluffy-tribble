@@ -8,6 +8,7 @@ import About from "../components/about.jsx"
 import FAQ from "../components/faq.jsx"
 import Why from "../components/why.jsx"
 import SignUp from "../components/signup.jsx"
+import Who from "../components/who.jsx"
 
 const home = () => {
   return (
@@ -25,6 +26,9 @@ const home = () => {
       </div>
       <div>
         <Why />
+      </div>
+      <div>
+        <Who />
       </div>
       <div>
         <Features />
