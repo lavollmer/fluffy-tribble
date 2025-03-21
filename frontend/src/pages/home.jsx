@@ -6,6 +6,7 @@ import Button from "../components/button.jsx"
 import Features from "../components/features.jsx"
 import About from "../components/about.jsx"
 import FAQ from "../components/faq.jsx"
+import Why from "../components/why.jsx"
 
 const home = () => {
   return (
@@ -26,6 +27,9 @@ const home = () => {
         </div>
       </div>
       <div>
+        <Why />
+      </div>
+      <div>
         <Features />
       </div>
       <div className='flex flex-row items-center justify-center'>
@@ -34,7 +38,9 @@ const home = () => {
       <div className='flex flex-col items-center justify-center p-6'>
         <FAQ />
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   )
 }
