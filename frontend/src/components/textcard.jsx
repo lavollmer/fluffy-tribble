@@ -3,7 +3,7 @@ import React from 'react'
 const textcard = ({ text, title, hashtagOne, hashtagTwo, hashtagThree }) => {
     return (
         <>
-            <div className='card card-compact w-32 md:w-72 lg:w-96 h-fit hover:bg-custom-bright-orange rounded overflow-hidden shadow-lg'>
+            <div className='card card-compact w-32 md:w-72 lg:w-96 h-fit hover:bg-custom-bright-orange rounded overflow-hidden shadow-lg p-6'>
                 {/* <img className='w-full'></img> */}
                 <div className='px-6 py-4'>
                     <div className='font-bold text-xl mb-2'>

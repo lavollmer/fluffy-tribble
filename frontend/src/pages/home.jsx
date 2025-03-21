@@ -22,7 +22,7 @@ const home = () => {
           </div>
         </div>
         <div className='flex flex-col p-4'>
-          <img src={mainImage} alt="mainImage" />
+          <img src={mainImage} alt="mainImage" className='rounded-lg' />
         </div>
       </div>
       <div>
@@ -31,7 +31,7 @@ const home = () => {
       <div className='flex flex-row items-center justify-center'>
         <About />
       </div>
-      <div>
+      <div className='flex flex-col items-center justify-center p-6'>
         <FAQ />
       </div>
       <Footer />
