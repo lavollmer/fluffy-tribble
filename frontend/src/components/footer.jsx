@@ -11,14 +11,22 @@ const footer = () => {
           <Newsletter />
         </div>
         <div className='flex flex-row items-center justify-center space-x-10 p-6 font-roboto'>
-          <h1 className='text-xl font-bold'>MEDPRONUNCIATION AI</h1>
+          <h1 className='text-xl font-bold hover:text-white'>
+            <Link to='/'>MEDPRONUNCIATION AI
+            </Link></h1>
           <div className='flex flex-row justify-center items-center font-bold text-md space-x-6'>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/practice">Practice</Link>
+            <div className='hover:text-white'>
+              <Link to="/login">Login</Link>
+            </div><div className='hover:text-white'>
+              <Link to="/practice">Practice</Link>
+            </div><div className='hover:text-white'>
+              <Link to="/contact">Contact Us</Link>
+            </div><div className='hover:text-white'>
+              <Link to="/about">About</Link>
+            </div>
           </div>
         </div>
-          <Social />
+        <Social />
       </div>
     </>
   )
