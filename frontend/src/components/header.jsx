@@ -15,13 +15,21 @@ const header = () => {
     <>
       <div className='flex flex-row justify-between font-roboto font-bold'>
         <div className='flex flex-row justify-center items-center m-10'>
-          <h1 className='text-3xl font-bold'>MEDPRONUNCIATION AI</h1>
+          <h1 className='text-3xl font-bold cursor-pointer hover:text-custom-bright-orange'>
+            <Link to="/">MEDPRONUNCIATION AI</Link>
+            </h1>
         </div>
         <div className='m-10 flex flex-row justify-center items-center space-x-10 text-xl'>
           <div className='flex flex-row justify-center items-center space-x-10'>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/practice">Practice</Link>
+            <div className='hover:text-custom-bright-orange'>
+              <Link to="/login">Login</Link>
+            </div><div className='hover:text-custom-bright-orange'>
+              <Link to="/practice">Practice</Link>
+            </div><div className='hover:text-custom-bright-orange'>
+              <Link to="/contact">Contact Us</Link>
+            </div><div className='hover:text-custom-bright-orange'>
+              <Link to="/about">About</Link>
+            </div>
           </div>
           <div className='flex flex-row items-center justify-center cursor-pointer'>
             <RxHamburgerMenu onClick={handleSideNavClick} />

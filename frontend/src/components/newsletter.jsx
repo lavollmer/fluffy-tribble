@@ -53,7 +53,7 @@ const newsletter = () => {
             type="submit"
             className="flex md:flex-row justify-center items-center text-center bg-custom-lighter-blue font-bold text-black rounded-md text-md py-2 px-4 md:text-lg mt-4 md:w-1/2 md:h-full md:mt-0 hover:bg-custom-light-blue"
           >
-            Contact Us
+            Sign Up
           </button>
         </form>
       </div>
