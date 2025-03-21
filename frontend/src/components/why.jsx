@@ -26,7 +26,7 @@ const why = () => {
                 <div className='flex flex-col items-center justify-center p-6'>
                     <TbPercentage60 className='text-8xl' />
                     <div className='flex flex-col items-center justify-center space-y-4'>
-                        <h1 className='font-bold text-4xl text-custom-bright-orange'>60%</h1>
+                        <h1 className='font-bold text-4xl text-custom-bright-orange'>60%+</h1>
                         <h1>of medical students struggle with medical terminology, often due to pronunciation difficulties</h1>
                     </div>
                 </div>

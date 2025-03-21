@@ -32,9 +32,6 @@ const home = () => {
       <div>
         <Features />
       </div>
-      <div className='flex flex-row items-center justify-center'>
-        <About />
-      </div>
       <div className='flex flex-col items-center justify-center p-6'>
         <FAQ />
       </div>
