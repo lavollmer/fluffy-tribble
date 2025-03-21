@@ -6,7 +6,9 @@ import { TbPercentage60 } from "react-icons/tb";
 const why = () => {
     return (
         <>
-            <div className='flex flex-row items-center justify-center space-x-4 bg-custom-lighter-blue font-roboto'>
+            <div className='flex flex-col items-center justify-center space-y-4 bg-custom-lighter-blue font-roboto'>
+                <h1 className='font-bold text-4xl text-black pt-10'>Why MedPronunciation AI?</h1>
+                <div className='flex flex-row items-center justify-center p-6'>
                 <div className='flex flex-col items-center justify-center p-6'>
                     <TbPercentage80 className='text-8xl' />
                     <div className='flex flex-col items-center justify-center space-y-4'>
@@ -27,6 +29,7 @@ const why = () => {
                         <h1 className='font-bold text-4xl text-custom-bright-orange'>60%</h1>
                         <h1>of medical students struggle with medical terminology, often due to pronunciation difficulties</h1>
                     </div>
+                </div>
                 </div>
             </div>
         </>
