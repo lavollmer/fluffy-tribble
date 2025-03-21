@@ -19,7 +19,7 @@ const sidenavbar = ({ showSideNavBar, handleSideNavClick }) => {
           <div className='flex flex-row justify-between items-center'>
             <h1 className='text-lg font-bold'>MEDPRONUNCIATION AI</h1>
           </div>
-          <div className='flex flex-col justify-start left-0 font-bold text-md cursor-pointer space-y-4'>
+          <div className='flex flex-col justify-start left-0 font-bold text-lg cursor-pointer space-y-4'>
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/practice">Practice</Link>

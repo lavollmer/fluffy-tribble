@@ -31,8 +31,8 @@ const newsletter = () => {
   return (
     <div className="bg-black p-10 flex flex-col items-center justify-center text-center font-roboto">
       <div className="flex flex-col space-y-4 text-white">
-        <h1 className="text-lg">BE ONE OF THE FIRST TO JOIN</h1>
-        <h2 className="text-xl">Stay up-to-date with what LAURA DEV is working on</h2>
+        <h1 className="text-lg font-bold">BE ONE OF THE FIRST TO JOIN</h1>
+        <h2 className="text-xl">Stay up-to-date with MedPronunciation AI and receive early access!</h2>
       </div>
       <div className="flex flex-row justify-center items-center text-center w-full">
         {/* form input with onSubmit handleSubmit function */}

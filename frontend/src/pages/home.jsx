@@ -14,11 +14,9 @@ const home = () => {
       <Header />
       <div className='grid grid-cols-2 gap-2 font-roboto'>
         <div className='flex flex-col items-center justify-center'>
-          <div className='flex flex-col items-center justify-center space-y-4'>
+          <div className='flex flex-col items-center justify-center space-y-4 p-40'>
             <h1 className='font-bold text-4xl'>Speaking medical terminology doesn't have to be hard.</h1>
-            <h2>AI-Led MedPronuncation works to teach healthcare professionals to pronounce medical terminology.</h2>
-          </div>
-          <div className="pt-6">
+            <h2>AI-Led MedPronunciation works to teach healthcare professionals to pronounce medical terminology.</h2>
             <Button to='/practice' buttonText='Start Learning Now' />
           </div>
         </div>
