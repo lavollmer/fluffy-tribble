@@ -21,22 +21,22 @@ const header = () => {
         </div>
         <div className='flex flex-row items-center justify-center text-xl m-10 space-x-10'>
           <h2 className='text-xl'>New to MedPronunciation AI? </h2>
-          <div className='text-custom-bright-orange'>
+          <div className='text-custom-bright-orange hover:underline'>
             <Link to="/signup">Sign Up Free</Link>
           </div>
         </div>
         <div className='m-10 flex flex-row justify-center items-center space-x-10 text-xl'>
           <div className='flex flex-row justify-center items-center space-x-10'>
-            <div className='hover:text-custom-bright-orange'>
+            <div className='hover:text-custom-bright-orange hover:underline'>
               <Link to="/login">Login</Link>
             </div>
-            <div className='hover:text-custom-bright-orange'>
+            <div className='hover:text-custom-bright-orange hover:underline'>
               <Link to="/practice">Practice</Link>
             </div>
-            <div className='hover:text-custom-bright-orange'>
+            <div className='hover:text-custom-bright-orange hover:underline'>
               <Link to="/contact">Contact Us</Link>
             </div>
-            <div className='hover:text-custom-bright-orange'>
+            <div className='hover:text-custom-bright-orange hover:underline'>
               <Link to="/about">About</Link>
             </div>
           </div>

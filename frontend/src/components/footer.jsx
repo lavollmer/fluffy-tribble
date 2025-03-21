@@ -14,6 +14,12 @@ const footer = () => {
           <h1 className='text-xl font-bold hover:text-white'>
             <Link to='/'>MEDPRONUNCIATION AI
             </Link></h1>
+          <div className='flex flex-row items-center justify-center font-bold text-md space-x-2'>
+            <h2>New to MedPronunciation AI? </h2>
+            <div className='hover:text-white'>
+              <Link to="/signup">Sign Up Free</Link>
+            </div>
+          </div>
           <div className='flex flex-row justify-center items-center font-bold text-md space-x-6'>
             <div className='hover:text-white'>
               <Link to="/login">Login</Link>
