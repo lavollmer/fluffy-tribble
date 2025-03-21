@@ -41,7 +41,7 @@ const header = () => {
             </div>
           </div>
           <div className='flex flex-row items-center justify-center cursor-pointer'>
-            <RxHamburgerMenu onClick={handleSideNavClick} />
+            <RxHamburgerMenu onClick={handleSideNavClick} className='text-2xl' />
           </div>
         </div>
       </div>
