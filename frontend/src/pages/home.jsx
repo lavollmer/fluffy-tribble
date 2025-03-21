@@ -12,18 +12,18 @@ const home = () => {
   return (
     <div className='h-screen w-screen bg-custom-primary'>
       <Header />
-      <div className='grid grid-cols-2 font-roboto'>
-        <div className='flex flex-col items-center justify-center p-6'>
+      <div className='grid grid-cols-2 gap-2 font-roboto'>
+        <div className='flex flex-col items-center justify-center'>
           <div className='flex flex-col items-center justify-center space-y-4'>
-            <h1 className='font-bold text-4xl'>Saying a medication name doesn't have to be hard.</h1>
+            <h1 className='font-bold text-4xl'>Speaking medical terminology doesn't have to be hard.</h1>
             <h2>AI-Led MedPronuncation works to teach healthcare professionals to pronounce medical terminology.</h2>
           </div>
           <div className="pt-6">
             <Button to='/practice' buttonText='Start Learning Now' />
           </div>
         </div>
-        <div className='flex flex-col p-4'>
-          <img src={mainImage} alt="mainImage" className='rounded-lg' />
+        <div className='flex flex-col items-center justify-center p-4'>
+          <img src={mainImage} alt="mainImage" className='items-stretch rounded-lg' />
         </div>
       </div>
       <div>
