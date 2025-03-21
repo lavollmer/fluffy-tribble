@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { FaPlus } from "react-icons/fa6";
-import { FaMinus } from "react-icons/fa";
+import Plus from "../assets/plus.png";
+import Minus from "../assets/minus.png";
 
 function faq() {
   //initializes a state variable named "active" and a function to update it as "setActive" using the useState hook, intial value is set to false
@@ -36,7 +36,7 @@ function faq() {
     <>
       <div className="w-[100vw] h-[100vh] flex justify-center items-center bg-light-pink font-worksans">
         <div className="w-[400px] md:max-w-[600px] md:w-auto z-10 rounded-lg flex flex-col p-3 text-dark-purple bg-white">
-          <div className="flex items-center my-4">
+          <div className="flex flex-row justify-center items-center my-4">
             <h1 className="font-bold text-dark-purple text-3xl md:text-4xl">FAQS</h1>
           </div>
           <div className="flex flex-col gap-4">
@@ -50,11 +50,12 @@ function faq() {
                   </h1>
                   {/* image to serve as button to toggle active state */}
                   <img
-                    src={active === item.id ? <FaMinus /> : <FaPlus />}
+                    src={active === item.id ? Minus : Plus }
                     alt="icon"
                     className="w-6 h-6 cursor-pointer"
                     // onClick event handler to toggle active state
                     onClick={() => active === item.id ? setActive(0) : setActive(item.id)}/>
+
                 </div>
                 {/* conditional rendering block that checks if the current item is the active one */}
                 {active === item.id ? (
