@@ -17,8 +17,9 @@ const home = () => {
       <div className='grid grid-cols-2 gap-2 font-roboto'>
         <div className='flex flex-col items-center justify-center space-y-20 p-14'>
           <h1 className='font-bold text-6xl'>Speaking medical terminology doesn't have to be hard.</h1>
-          <h2 className='text-4xl'>AI-Led MedPronunciation works to teach healthcare professionals to pronounce medical terminology.</h2>
-          <Button to='/practice' buttonText='Start Learning Now' />
+          {/* <h2 className='text-3xl'>AI-Led MedPronunciation teaches healthcare professionals and students to pronounce and learn medical terminology for free in a fun way.</h2> */}
+          <h1 className='text-3xl'>Learn and perfect medication pronunciation with AI—fun, gamified learning for healthcare professionals and students!</h1>
+          <Button to='/practice' buttonText='Start Learning Now For Free' />
         </div>
         <div className='flex flex-col items-center justify-center p-4'>
           <img src={mainImage} alt="mainImage" className='items-center rounded-lg' />
